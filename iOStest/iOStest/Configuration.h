@@ -16,6 +16,7 @@
 - (NSString *)requestURL;
 
 - (CGFloat)collectionSpacing;
+- (CGFloat)availabilitySpacing;
 
 - (int)iphonePortraitCellsPerRow;
 - (int)iphoneLandscapeCellsPerRow;

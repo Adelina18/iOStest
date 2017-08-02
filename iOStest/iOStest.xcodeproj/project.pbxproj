@@ -15,6 +15,9 @@
 		84ECBF921F3153B40005E33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ECBF901F3153B40005E33A /* LaunchScreen.storyboard */; };
 		84ECBF9B1F31562B0005E33A /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ECBF9A1F31562B0005E33A /* CollectionViewCell.m */; };
 		84ECBF9E1F315BFB0005E33A /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ECBF9D1F315BFB0005E33A /* Configuration.m */; };
+		84ECBFA11F3164C20005E33A /* CollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ECBFA01F3164C20005E33A /* CollectionModel.m */; };
+		84ECBFA51F3168060005E33A /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ECBFA41F3168060005E33A /* ResponseModel.m */; };
+		84ECBFA81F3169050005E33A /* FormattedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ECBFA71F3169050005E33A /* FormattedModel.m */; };
 		D47983B305C0E921CAB435ED /* libPods-iOStest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBB763734BC6F19AB552976 /* libPods-iOStest.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,12 @@
 		84ECBF9A1F31562B0005E33A /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		84ECBF9C1F315BFB0005E33A /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		84ECBF9D1F315BFB0005E33A /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		84ECBF9F1F3164C20005E33A /* CollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionModel.h; sourceTree = "<group>"; };
+		84ECBFA01F3164C20005E33A /* CollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionModel.m; sourceTree = "<group>"; };
+		84ECBFA31F3168060005E33A /* ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
+		84ECBFA41F3168060005E33A /* ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
+		84ECBFA61F3169050005E33A /* FormattedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormattedModel.h; sourceTree = "<group>"; };
+		84ECBFA71F3169050005E33A /* FormattedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormattedModel.m; sourceTree = "<group>"; };
 		CED29410AD7CE627B654AE4C /* Pods-iOStest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOStest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOStest/Pods-iOStest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8080C56843DBDB704B4075 /* Pods-iOStest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOStest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOStest/Pods-iOStest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +97,7 @@
 		84ECBF811F3153B40005E33A /* iOStest */ = {
 			isa = PBXGroup;
 			children = (
+				84ECBFA21F3167ED0005E33A /* JSONModels */,
 				84ECBF851F3153B40005E33A /* AppDelegate.h */,
 				84ECBF861F3153B40005E33A /* AppDelegate.m */,
 				84ECBF881F3153B40005E33A /* ViewController.h */,
@@ -111,6 +121,19 @@
 				84ECBF831F3153B40005E33A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84ECBFA21F3167ED0005E33A /* JSONModels */ = {
+			isa = PBXGroup;
+			children = (
+				84ECBF9F1F3164C20005E33A /* CollectionModel.h */,
+				84ECBFA01F3164C20005E33A /* CollectionModel.m */,
+				84ECBFA31F3168060005E33A /* ResponseModel.h */,
+				84ECBFA41F3168060005E33A /* ResponseModel.m */,
+				84ECBFA61F3169050005E33A /* FormattedModel.h */,
+				84ECBFA71F3169050005E33A /* FormattedModel.m */,
+			);
+			name = JSONModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ECBFA51F3168060005E33A /* ResponseModel.m in Sources */,
 				84ECBF9E1F315BFB0005E33A /* Configuration.m in Sources */,
+				84ECBFA81F3169050005E33A /* FormattedModel.m in Sources */,
+				84ECBFA11F3164C20005E33A /* CollectionModel.m in Sources */,
 				84ECBF8A1F3153B40005E33A /* ViewController.m in Sources */,
 				84ECBF871F3153B40005E33A /* AppDelegate.m in Sources */,
 				84ECBF9B1F31562B0005E33A /* CollectionViewCell.m in Sources */,
@@ -406,6 +432,7 @@
 				84ECBF981F3153B40005E33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
