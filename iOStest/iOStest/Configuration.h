@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Configuration : NSObject
 
 + (instancetype)sharedInstance;
 
-- (int)collectionSpacing;
+- (NSString *)requestURL;
+
+- (CGFloat)collectionSpacing;
+
 - (int)iphonePortraitCellsPerRow;
 - (int)iphoneLandscapeCellsPerRow;
 - (int)ipadPortraitCellsPerRow;

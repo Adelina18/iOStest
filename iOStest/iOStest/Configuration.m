@@ -10,7 +10,10 @@
 
 @implementation Configuration
 
-static int kSpacing = 5;
+static NSString *kRequestURL = @"https://deindeal.ch/api/public/v1/data/categories/design/collections?locale=de";
+
+static CGFloat kSpacing = 5;
+
 static int kIphonePortraitCellsPerRow = 1;
 static int kIphoneLandscapeCellsPerRow = 2;
 static int kIpadPortraitCellsPerRow = 2;
@@ -26,7 +29,11 @@ static int kIpadLandscapeCellsPerRow = 3;
     return sharedInstance;
 }
 
-- (int)collectionSpacing {
+- (NSString *)requestURL {
+    return kRequestURL;
+}
+
+- (CGFloat)collectionSpacing {
     return kSpacing;
 }
 
